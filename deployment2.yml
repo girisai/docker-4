@@ -42,9 +42,8 @@ spec:
       - name: karthik-secret
 ---
 apiVersion: v1
-kind: configMap
+kind: ConfigMap
 metadata:
   name: karthik-service
 data:
-  x: "karthik"
----
+  x: "karthik1"
