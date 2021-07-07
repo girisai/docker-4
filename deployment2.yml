@@ -44,7 +44,7 @@ spec:
 apiVersion: v1
 kind: configMap
 metadata:
-  name: karthikdeployment
+  name: karthik-service
 data:
   x: "karthik"
 ---
