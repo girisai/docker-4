@@ -37,7 +37,7 @@ spec:
         - containerPort: 80
         envFrom:
           - configMapRef:
-              name: karthikdeployment
+              name: karthik-service
       imagePullSecrets:
       - name: karthik-secret
 ---
