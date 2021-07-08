@@ -57,3 +57,17 @@ metadata:
   name: karthik-service
 data:
   x: "karthik1"
+---
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: test
+spec:
+  rules:
+  - host: test.karthik.com
+  - http:
+      paths:   
+      - path: /nginx
+	      backend:
+	        serviceName: karthik-service
+	        servicePort: 80
