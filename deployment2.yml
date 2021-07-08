@@ -35,6 +35,16 @@ spec:
         image: karthiksaigummalapu/ngnix:v1
         ports:
         - containerPort: 80
+        readinessProbe:
+          tcpSocket:
+            port: 8080
+          initialDelaySeconds: 5
+          periodSeconds: 10
+        livenessProbe:
+          tcpSocket:
+            port: 8080
+          initialDelaySeconds: 15
+          periodSeconds: 20
         envFrom:
           - configMapRef:
               name: karthik-service
