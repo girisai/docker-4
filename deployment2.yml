@@ -68,6 +68,6 @@ spec:
   - http:
       paths:   
       - path: /nginx
-	backend:
-	  serviceName: karthik-service
-	  servicePort: 80
+        backend:
+          serviceName: karthik-service
+          servicePort: 80
