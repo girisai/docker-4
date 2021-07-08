@@ -64,7 +64,7 @@ metadata:
   name: test
 spec:
   rules:
-  - host: test.karthik.com
+  - host: 2886795274-30000-ollie02.environments.katacoda.com
   - http:
       paths:   
       - path: /nginx
