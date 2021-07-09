@@ -58,7 +58,7 @@ metadata:
 data:
   x: "karthik1"
 ---
-apiVersion: extensions/v1beta1
+apiVersion: v1
 kind: Ingress
 metadata:
   name: test
